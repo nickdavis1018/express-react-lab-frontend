@@ -10,11 +10,11 @@ function Projects(props) {
   };
   useEffect(() => getProjectsData(), []);
   const loaded = () => {
-    return projects.map((project) => (
-      <div className="box">
-        <h1>{project.name}</h1>
+    return projects.map((project, index) => (
+      <div key={index} className="box">
+        <h1 className="project">{project.name}</h1>
         <div className="box2">
-        <img className="projectImage" src={project.image} />
+        <img className="projectImage" alt="project" src={project.image} />
         <div className="box3">
         <p className="projectInfo">{project.about}</p>
         <a href={project.git}>

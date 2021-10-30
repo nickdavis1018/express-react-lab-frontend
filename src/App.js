@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div className="Content">
       <Switch>
         <Route exact path="/">
           <Home />
@@ -23,6 +24,7 @@ function App() {
           <About URL={URL} />
         </Route>
       </Switch>
+      </div>
       <Footer />
     </div>
   );

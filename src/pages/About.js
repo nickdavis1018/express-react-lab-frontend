@@ -11,15 +11,17 @@ function About(props) {
 
   useEffect(() => getAboutData(), []);
   const loaded = () => (
-    <div className="box">
+    <div className="aboutBox">
       <h2>{about.name}</h2>
-      <div className="box2">
-      <img className="headshot" src={about.headshot} />
+      <div className="aboutBox2">
+      <img alt="personal-photo" className="headshot" src={about.headshot} />
       <div className="linksAndInfo">
-      <a href = "mailto: nickdavis1018@gmail.com"><img className="imageLinks" src="https://imgur.com/8UNVyGK.png"/></a>
-      <a href = "https://github.com/nickdavis1018"><img className="imageLinks" src="https://imgur.com/J6LeoUb.png"/></a>
-      <a href = "https://www.linkedin.com/in/nicholas-a-davis/"><img className="imageLinks" src="https://imgur.com/rwYRqn6.png"/></a> 
-      <p>{about.bio}</p></div>
+      <p className="projectInfo">{about.bio}</p>
+      <div className="linksAbout">
+      <a href = "mailto: nickdavis1018@gmail.com"><img alt="link-photo" className="imageLinks" src="https://imgur.com/8UNVyGK.png"/></a>
+      <a href = "https://github.com/nickdavis1018"><img alt="link-photo" className="imageLinks" src="https://imgur.com/J6LeoUb.png"/></a>
+      <a href = "https://www.linkedin.com/in/nicholas-a-davis/"><img alt="link-photo" className="imageLinks" src="https://imgur.com/rwYRqn6.png"/></a>  </div>
+      </div>
      </div>
     </div>
   );

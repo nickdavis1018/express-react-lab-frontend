@@ -1,13 +1,22 @@
 .App {
   text-align: center;  
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: rgb(196, 231, 255);
 }
 
 body{
   background-color: gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.Content{
+  vertical-align: center;
+  margin-bottom: 100px;
+  min-height: 800px;
+}
+
+.home{
+  padding: 400px;
 }
 
 .App-logo {
@@ -40,12 +49,26 @@ font-weight: bold;
   margin: 20px;
   padding: 20px;
   border-radius: 20px;
+  height: fit-content;
   background-color: rgb(196, 231, 255);
+  display: flex;
+  flex-direction: column;
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .foot{
   background-color: gray;
-  margin-top: 20px;
+  height: 200px;
+  border-top: 3px solid black;;
+}
+
+.project{
+  text-align: left;
 }
 
 .box2{
@@ -53,10 +76,24 @@ font-weight: bold;
   flex-direction: row;
 }
 
+.box3{
+  text-align: left;
+}
+
 .imageLinks{
   width: 40px;
   height: 40px;
   border-radius: 10px;
+}
+
+.linksAbout{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+header {
+background-color: gray;
 }
 
 .projectImage{
@@ -66,7 +103,8 @@ font-weight: bold;
 }
 
 .projectInfo{
-  text-align: left
+  text-align: left;
+  padding-left: 20px;
 }
 
 button{
@@ -77,6 +115,7 @@ button{
 }
 
 @media (prefers-reduced-motion: no-preference) {
+
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -99,6 +138,13 @@ button{
 .headshot{
   height: 500px;
   border-radius: 100px;
+  border: 1px solid black;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .foot{

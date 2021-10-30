@@ -11,8 +11,8 @@ body{
 
 .Content{
   vertical-align: center;
-  margin-bottom: 100px;
   min-height: 800px;
+  padding: 40px;
 }
 
 .home{

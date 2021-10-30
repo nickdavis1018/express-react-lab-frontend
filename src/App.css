@@ -1,10 +1,79 @@
 .App {
-  text-align: center;
+  text-align: center;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(196, 231, 255);
+}
+
+body{
+  background-color: gray;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+
+.top{
+  margin: 0 auto;
+}
+
+.borderTop{
+  border-bottom: 3px black solid;
+}
+
+.mailTo{
+text-decoration: underline;
+color: rgb(17, 51, 202);
+font-weight: bold;
+}
+
+.box{
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(196, 231, 255);
+}
+
+.foot{
+  background-color: gray;
+  margin-top: 20px;
+}
+
+.box2{
+  display: flex;
+  flex-direction: row;
+}
+
+.imageLinks{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.projectImage{
+  border-radius: 40px;
+  border: 1px solid black;
+  margin-right: 20px;
+}
+
+.projectInfo{
+  text-align: left
+}
+
+button{
+  background-color: rgb(5, 69, 151);
+  color: white;
+  padding: 10px;
+  margin: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -27,10 +96,30 @@
 .App-link {
   color: #61dafb;
 }
-
-img{
-  border-radius: 20px;
+.headshot{
+  height: 500px;
+  border-radius: 100px;
 }
+
+.foot{
+  background-color:gray;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+
+.mailTo{
+  text-decoration: underline;
+  color: rgb(17, 51, 202);
+  font-weight: bold;
+  }
 
 @keyframes App-logo-spin {
   from {

@@ -4,7 +4,6 @@ function Header(props) {
   const navStyle = {
     display: "flex",
     justifyContent: "space-around",
-    border: "3px solid black",
     padding: "8px",
     width: "90%",
     margin: "auto",
@@ -12,11 +11,11 @@ function Header(props) {
 
   return (
     <header>
-      <h1>My Portfolio Page</h1>
-      <nav style={navStyle}>
+        <div className="top">
         <Link to="/">
-          <div>HOME</div>
+        <h1>Nicholas Davis Development Portfolio</h1>
         </Link>
+      <nav style={navStyle}>
         <Link to="/about">
           <div>ABOUT</div>
         </Link>
@@ -24,6 +23,8 @@ function Header(props) {
           <div>PROJECTS</div>
         </Link>
       </nav>
+      </div>
+      <div className="borderTop"></div>
     </header>
   );
 }

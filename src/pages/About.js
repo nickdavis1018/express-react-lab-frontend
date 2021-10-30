@@ -10,12 +10,17 @@ function About(props) {
   };
 
   useEffect(() => getAboutData(), []);
-
   const loaded = () => (
-    <div>
+    <div className="box">
       <h2>{about.name}</h2>
-      <h3>{about.email}</h3>
-      <p>{about.bio}</p>
+      <div className="box2">
+      <img className="headshot" src={about.headshot} />
+      <div className="linksAndInfo">
+      <a href = "mailto: nickdavis1018@gmail.com"><img className="imageLinks" src="https://imgur.com/8UNVyGK.png"/></a>
+      <a href = "https://github.com/nickdavis1018"><img className="imageLinks" src="https://imgur.com/J6LeoUb.png"/></a>
+      <a href = "https://www.linkedin.com/in/nicholas-a-davis/"><img className="imageLinks" src="https://imgur.com/rwYRqn6.png"/></a> 
+      <p>{about.bio}</p></div>
+     </div>
     </div>
   );
   return about ? loaded() : <h1>Loading...</h1>;

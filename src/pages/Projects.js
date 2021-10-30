@@ -11,16 +11,21 @@ function Projects(props) {
   useEffect(() => getProjectsData(), []);
   const loaded = () => {
     return projects.map((project) => (
-      <div>
+      <div className="box">
         <h1>{project.name}</h1>
-        <img src={project.image} />
+        <div className="box2">
+        <img className="projectImage" src={project.image} />
+        <div className="box3">
+        <p className="projectInfo">{project.about}</p>
         <a href={project.git}>
-          <button>Github</button>
+          <button>{project.name} Github</button>
         </a>
         <a href={project.live}>
-          <button>live site</button>
+          <button>Launch {project.name}</button>
         </a>
-      </div>
+        </div>
+        </div>
+        </div>
     ));
   };
 

@@ -10,13 +10,8 @@ body{
 }
 
 .Content{
-  vertical-align: center;
-  min-height: 800px;
   padding: 40px;
-}
-
-.home{
-  padding: 400px;
+  min-height: 700px;
 }
 
 .App-logo {
@@ -49,17 +44,11 @@ font-weight: bold;
   margin: 20px;
   padding: 20px;
   border-radius: 20px;
-  height: fit-content;
   background-color: rgb(196, 231, 255);
   display: flex;
   flex-direction: column;
 }
 
-.home{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
 
 .foot{
   background-color: gray;
@@ -112,6 +101,70 @@ button{
   color: white;
   padding: 10px;
   margin: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+.projectImage{
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 40px;
+  border: 1px solid black
+}}
+
+@media only screen and (max-width: 800px) {
+
+  .projectImage{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 40px;
+    border: 1px solid black
+  }
+
+  .projectInfo{
+    font-size: 12px;
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .projectInfo{
+    display: none;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .box{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(196, 231, 255);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .projectImage{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 40px;
+    border: 1px solid black
+  }
+  button{
+    background-color: rgb(5, 69, 151);
+    width: 75px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+  }
+  .box3{
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

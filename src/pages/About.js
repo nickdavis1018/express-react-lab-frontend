@@ -19,7 +19,7 @@ function About(props) {
       <p className="projectInfo">{about.bio}</p>
       <div className="linksAbout">
       <a href = "mailto: nickdavis1018@gmail.com"><img alt="link-photo" className="imageLinks" src="https://imgur.com/8UNVyGK.png"/></a>
-      <a href = "https://github.com/nickdavis1018"><img alt="link-photo" className="imageLinks" src="https://imgur.com/J6LeoUb.png"/></a>
+      <a href = "https://github.com/nickdavis1018"><img alt="link-photo" className="imageLinks" src="https://imgur.com/TRBV2Ii.png"/></a>
       <a href = "https://www.linkedin.com/in/nicholas-a-davis/"><img alt="link-photo" className="imageLinks" src="https://imgur.com/rwYRqn6.png"/></a>  </div>
       </div>
      </div>

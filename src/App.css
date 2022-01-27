@@ -1,17 +1,48 @@
 .App {
-  text-align: center;  
-  background-color: rgb(196, 231, 255);
+  background-color: #0B1A2F;
+  padding-left: 60px;
+  color: white;
+  font-family: "Roboto"
 }
 
-body{
-  background-color: gray;
+.aboutMe{
+  text-align: left;
+  padding-top: 20px;
+}
+.test{
+  width: 50%
+}
+
+.projectSearch{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
-.Content{
-  padding: 40px;
-  min-height: 700px;
+.border{
+  border-top: 2px solid #1c2737;
+  width: 70%
+}
+
+.titleProj{
+  font-size: 28px;
+  color: rgb(104, 210, 255);
+}
+
+.searchBar{
+ height: 20px; 
+ color: rgb(104, 210, 255);
+ background-color: #0B1A2F;
+ border: 2px solid rgb(104, 210, 255);
+ border-radius: 4px;
+ margin-top: 48px;
+ margin-left: 16px;
+
+}
+.headshot{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 1px solid white
 }
 
 .App-logo {
@@ -33,31 +64,42 @@ a{
   border-bottom: 3px black solid;
 }
 
-.mailTo{
-text-decoration: underline;
-color: rgb(17, 51, 202);
-font-weight: bold;
+p > .mailTo {
+  color: rgb(104, 210, 255);
 }
 
 .box{
-  border: 2px solid black;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: rgb(196, 231, 255);
-  display: flex;
-  flex-direction: column;
-}
-
-
-.foot{
-  background-color: gray;
-  height: 200px;
-  border-top: 3px solid black;;
+  margin-bottom: 60px;
+  width: 70%;
+  border-top: 2px solid #1c2737;
 }
 
 .project{
   text-align: left;
+  padding-left: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.hi{
+  padding-top: 28px;
+}
+
+.name{
+  font-weight: bold;
+  font-size: 36px;
+  padding-top: 12px;
+}
+
+.me{
+  padding-top: 12px;
+  font-size: 36px;
+  color: #059DF2
+}
+
+.bio{
+  font-size: 16px;
+  padding-top: 12px;
 }
 
 .box2{
@@ -67,28 +109,89 @@ font-weight: bold;
 
 .box3{
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.imageLinks{
+.box4{
+  display: flex;
+  flex-direction: row;
+}
+
+.imageLinks1{
   width: 40px;
-  height: 40px;
-  border-radius: 10px;
+  height: 34px;
+  border-radius: 5px;
+  border: 2px solid rgb(104, 210, 255);
+}
+
+.imageLinks2{
+  width: 40px;
+  height: 34px;
+  border-radius: 5px;
+  border: 2px solid rgb(104, 210, 255);
+  margin-left: 50px
+}
+
+.imageLinks3{
+  width: 40px;
+  height: 34px;
+  border-radius: 5px;
+  border: 2px solid rgb(104, 210, 255);
+  margin-left: 50px
+}             
+
+.imageLinks4{
+  width: 50px;
+  height: 36px;
+  border-radius: 5px;
+  border: 2px solid rgb(104, 210, 255)
+}
+
+.projTitle{
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: 30% 70%
+}
+
+.projLink{
+  margin-top: 9px;
+  margin-left: 16px
+}
+
+.launchButton{
+  background-color: #0B1A2F;
+  border: 2px solid rgb(104, 210, 255);
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.launchButton2{
+  background-color: #0B1A2F;
+  border: 2px solid rgb(104, 210, 255);
+  border-radius: 5px;
+  margin-left: 50px;
+}
+
+.titleProj{
+  padding-top: 20px;
+}
+
+.buttonLink{
+  margin-left: 10px;
 }
 
 .linksAbout{
 display: flex;
 flex-direction: row;
-justify-content: space-evenly;
-}
-
-header {
-background-color: gray;
 }
 
 .projectImage{
-  border-radius: 40px;
-  border: 1px solid black;
-  margin-right: 20px;
+  width: 300px;
+  height: 200px;
 }
 
 .projectInfo{
@@ -104,69 +207,98 @@ button{
 }
 
 @media only screen and (max-width: 1000px) {
-
-.projectImage{
-  max-width: 200px;
-  max-height: 200px;
-  border-radius: 40px;
-  border: 1px solid black
-}}
-
-@media only screen and (max-width: 800px) {
-
-  .projectImage{
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: 40px;
-    border: 1px solid black
+  .test{
+    width: 70%
   }
-
-  .projectInfo{
-    font-size: 12px;
-    text-align: left;
-    padding-left: 20px;
-  }
+    
 }
-
-
 @media only screen and (max-width: 600px) {
-
+  .box2{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .box4{
+    display: flex;
+    align-content: left;
+    justify-content: left;
+  }
   .projectInfo{
-    display: none;
     text-align: left;
+  }
+  .project{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .projectImage{
+    width: 200px;
+    height: 100px;
+    padding-left: 20px
+  }
+  .test{
+    width: 90%
+  }
+  .App{
+    padding-left: 10px;
+  }
+  .projectSearch{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 200px;
+  }
+  .titleProj{
     padding-left: 20px;
   }
-
-  .box{
-    border: 2px solid black;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: rgb(196, 231, 255);
+  .searchBar{
+ height: 20px; 
+ color: rgb(104, 210, 255);
+ background-color: #0B1A2F;
+ border: 2px solid rgb(104, 210, 255);
+ border-radius: 4px;
+ margin-right: 16px;
+}
+.box{
+  margin-bottom: 60px;
+  width: 90%;
+  border-top: 2px solid #1c2737;
+}
+}
+@media only screen and (max-width: 400px) {
+  .imageLinks1{
+    width: 30px;
+    height: 24px;
+    border-radius: 5px;
+    border: 2px solid rgb(104, 210, 255);
+    margin-left: 20px
+  }
+  
+  .imageLinks2{
+    width: 30px;
+    height: 24px;
+    border-radius: 5px;
+    border: 2px solid rgb(104, 210, 255);
+    margin-left: 20px
+  }
+  
+  .imageLinks3{
+    width: 30px;
+    height: 24px;
+    border-radius: 5px;
+    border: 2px solid rgb(104, 210, 255);
+    margin-left: 20px
+  } 
+  .launchButton{
+    background-color: #0B1A2F;
+    border: 2px solid rgb(104, 210, 255);
+    border-radius: 5px;
+    margin-left: 20px;
+    height: 30px;
+    width: 80px;
+    padding: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }
-
-@media only screen and (max-width: 500px) {
-
-  .projectImage{
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 40px;
-    border: 1px solid black
-  }
-  button{
-    background-color: rgb(5, 69, 151);
-    width: 75px;
-    color: white;
-    padding: 10px;
-    margin: 10px;
-  }
-  .box3{
-    display: flex;
-    flex-direction: row;
-  }
-}
-
 @media (prefers-reduced-motion: no-preference) {
 
   .App-logo {
@@ -188,11 +320,6 @@ button{
 .App-link {
   color: #61dafb;
 }
-.headshot{
-  height: 500px;
-  border-radius: 100px;
-  border: 1px solid black;
-}
 
 .links{
   display: flex;
@@ -201,11 +328,9 @@ button{
 }
 
 .foot{
-  background-color:gray;
   display: flex;
   flex-direction: row;
-  flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
 
 a{
@@ -213,12 +338,6 @@ a{
   color: black;
   font-style: italic;
 }
-
-.mailTo{
-  text-decoration: underline;
-  color: rgb(17, 51, 202);
-  font-weight: bold;
-  }
 
 @keyframes App-logo-spin {
   from {

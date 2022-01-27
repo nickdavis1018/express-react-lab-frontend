@@ -12,19 +12,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="Content">
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/projects">
-          <Projects URL={URL} />
-        </Route>
-        <Route path="/about">
-          <About URL={URL} />
-        </Route>
-      </Switch>
-      </div>
+      <About URL={URL} />
+      <Projects URL={URL} />
+      <Home />
       <Footer />
     </div>
   );
